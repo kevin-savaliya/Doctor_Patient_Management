@@ -12,7 +12,7 @@ This project includes a complete **React.js frontend**, **Node.js + Express back
 ## 📌 Features
 
 ### 👨‍⚕️ Doctor Login
-- Secure login using email and password.
+- Secure login using email and password (with Bearer Token authentication).
 
 ### 📝 Patient Management
 - Add patient details:  
@@ -32,6 +32,13 @@ This project includes a complete **React.js frontend**, **Node.js + Express back
   - Set Dosage, Frequency, Duration, Instructions
 - View prescription history.
 
+### 📊 Analytics Dashboard
+- Dashboard with real-time counts of:
+  - Total Patients
+  - Total Medicines
+  - Total Prescriptions
+  - Today’s Activities
+
 ---
 
 ## 🛠️ Technologies Used
@@ -41,7 +48,7 @@ This project includes a complete **React.js frontend**, **Node.js + Express back
 | Frontend   | React.js                    |
 | Backend    | Node.js, Express.js         |
 | Database   | MongoDB (MongoDB Atlas)     |
-| Image Upload | Cloudinary (optional)     |
+| Auth       | Bearer Token Authentication |
 | Frontend Hosting | Vercel                |
 | Backend Hosting  | Render                |
 
@@ -50,36 +57,13 @@ This project includes a complete **React.js frontend**, **Node.js + Express back
 ## 🧠 How It Works
 
 1. Doctor logs in via the frontend.
-2. Can manage:
+2. JWT Bearer Token is used to authenticate all API requests.
+3. Doctor can manage:
    - Patient records
    - Medicine inventory
    - Patient prescriptions
-3. All actions communicate with the backend API hosted on Render.
-4. Data is persisted in MongoDB Atlas cloud database.
-
----
-
-## 📁 Project Structure
-
-```
-Doctor_Patient_Management/
-│
-├── Frontend/                 # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── Common/Components/    # Sidebar, splash screen, etc.
-│   │   ├── Pages/                # Patient, Medicine, Prescription pages
-│   │   └── App.js
-│   └── package.json
-│
-├── Backend/                  # Node.js + Express backend
-│   ├── routes/               # API routes
-│   ├── models/               # Mongoose models
-│   ├── controllers/          # Controller logic
-│   ├── config/               # DB and dotenv config
-│   ├── index.js
-│   └── package.json
-```
+4. Analytics dashboard fetches and displays daily and total statistics.
+5. All data is securely stored in MongoDB Atlas.
 
 ---
 
@@ -109,6 +93,7 @@ npm install
 # Create a .env file and add:
 # MONGO_URI=your_mongo_uri
 # PORT=5000
+# JWT_SECRET=your_jwt_secret
 npm run dev
 ```
 
@@ -130,6 +115,7 @@ npm start
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
 ```
 
 ### Frontend `.env`
@@ -141,12 +127,11 @@ REACT_APP_API_URL=https://hospital-management-epar.onrender.com
 
 ## 🔮 Future Improvements
 
-- 🔐 JWT Authentication & Authorization
-- 👤 Doctor Profile Management
+- 🔐 Enhanced role-based authorization
+- 👤 Doctor Profile & Password Reset
 - 🧾 Export Prescriptions to PDF
-- 📊 Analytics Dashboard
 - 📅 Appointment Scheduling
-- 💰 Billing System
+- 💰 Billing & Invoicing System
 
 ---
 
