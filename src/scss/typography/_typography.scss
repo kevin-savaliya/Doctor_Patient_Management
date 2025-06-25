@@ -1,0 +1,342 @@
+@mixin font-72-white {
+    font-size: 72px;
+    color: var(--font-color-white);
+    font-weight: 900;
+    line-height: 82px;
+}
+
+@mixin font-72-blue {
+    font-size: 72px;
+    color: var(--font-color-blue);
+    font-weight: 900;
+    line-height: 82px;
+}
+
+@mixin font-50-blue {
+    font-size: 50px;
+    color: var(--font-color-blue);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+@mixin font-50-white {
+    font-size: 50px;
+    color: var(--font-color-white);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+@mixin font-40-black {
+    font-size: 40px;
+    color: var(--font-color-black);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+@mixin font-40-blue {
+    font-size: 40px;
+    color: var(--font-color-blue);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+@mixin font-28-blue {
+    font-size: 28px;
+    color: var(--font-color-blue);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin font-22-white {
+    font-size: 22px;
+    color: var(--font-color-white);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin font-20-black {
+    font-size: 20px;
+    color: var(--font-color-black);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin font-18-black {
+    font-size: 18px;
+    color: var(--font-color-black);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin font-18-white {
+    font-size: 18px;
+    color: var(--font-color-white);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin font-16-white {
+    font-size: 16px;
+    color: var(--font-color-white);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-16-gray {
+    font-size: 16px;
+    color: var(--font-color-gray);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-16-black {
+    font-size: 16px;
+    color: var(--font-color-black);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-16-blue {
+    font-size: 16px;
+    color: var(--font-color-blue);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-15-white {
+    font-size: 15px;
+    color: var(--font-color-white);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-15-black {
+    font-size: 15px;
+    color: var(--font-color-black);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-15-gray {
+    font-size: 15px;
+    color: var(--font-color-gray);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin font-14-blue {
+    font-size: 14px;
+    color: var(--font-color-blue);
+    font-weight: 800;
+    line-height: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@mixin font-112-black {
+    font-size: 112px;
+    color: var(--font-color-black);
+    font-weight: 700;
+}
+
+@mixin font-90-black {
+    font-size: 90px;
+    color: var(--font-color-black);
+    font-weight: 700;
+}
+
+@mixin font-55-black {
+    font-size: 55px;
+    color: var(--font-color-black);
+    font-weight: 700;
+}
+
+@mixin font-40-white {
+    font-size: 40px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-40-gray {
+    font-size: 40px;
+    color: var(--font-color-gray);
+    font-weight: 500;
+}
+
+@mixin font-40-black {
+    font-size: 40px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-36-black {
+    font-size: 36px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-36-blue {
+    font-size: 36px;
+    color: var(--font-color-blue);
+    font-weight: 500;
+}
+
+@mixin font-36-white {
+    font-size: 36px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-30-blue {
+    font-size: 30px;
+    color: var(--font-color-blue);
+    font-weight: 500;
+}
+
+@mixin font-28-black {
+    font-size: 28px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+@mixin font-26-white {
+    font-size: 26px;
+    color: var(--font-color-white);
+}
+
+@mixin font-24-black {
+    font-size: 24px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-21-black {
+    font-size: 21px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-20-blue {
+    font-size: 20px;
+    color: var(--font-color-blue);
+    font-weight: 500;
+}
+
+@mixin font-20-white {
+    font-size: 20px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-20-black {
+    font-size: 20px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-19-black {
+    font-size: 19px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-18-black {
+    font-size: 18px;
+    color: var(--font-color-black);
+    font-weight: 500;
+}
+
+@mixin font-18-gray {
+    font-size: 18px;
+    color: var(--font-color-gray);
+    font-weight: 500;
+}
+
+@mixin font-16-white {
+    font-size: 16px;
+    color: var(--font-color-white);
+    font-weight: 600;
+}
+
+@mixin font-15-blue {
+    font-size: 15px;
+    color: var(--font-color-blue);
+    font-weight: 600;
+}
+
+@mixin font-14-gray {
+    font-size: 14px;
+    color: var(--font-color-gray);
+    font-weight: 500;
+}
+
+@mixin font-14-black {
+    font-size: 14px;
+    color: var(--font-color-black);
+    font-weight: 100;
+}
+
+@mixin font-14-white {
+    font-size: 14px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-13-white {
+    font-size: 13px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-13-gray {
+    font-size: 13px;
+    color: var(--font-color-gray);
+    font-weight: 500;
+}
+
+
+
+@mixin font-12-blue {
+    font-size: 12px;
+    color: var(--font-color-blue);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@mixin font-12-black {
+    font-size: 12px;
+    color: var(--font-color-black);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@mixin font-11-gray {
+    font-size: 11px;
+    color: var(--font-color-gray);
+    font-weight: 500;
+}
+
+@mixin font-11-white {
+    font-size: 11px;
+    color: var(--font-color-white);
+    font-weight: 500;
+}
+
+@mixin font-11-blue {
+    font-size: 11px;
+    color: var(--font-color-blue);
+    font-weight: 500;
+}
+
+@mixin font-10-white {
+    font-size: 10px;
+    color: var(--font-color-white);
+    font-weight: 700;
+}
+
+@mixin font-10-gray {
+    font-size: 10px;
+    color: var(--font-color-gray);
+    font-weight: 600;
+}

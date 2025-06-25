@@ -1,0 +1,257 @@
+.main-view-prescriptions {
+  margin-left: 250px;
+
+  .view-prescriptions {
+    padding: 20px;
+    background-color: #e0f2f1;
+    min-height: 100vh;
+
+    .view-prescription-back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #08ab99;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #2e8b80;
+      }
+    }
+
+    .page-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #7d38c2;
+      margin-bottom: 30px;
+
+      .view-prescription-icon{
+        font-size: 34px;
+        margin-right: 5px;
+        color: #7d38c2;
+      }
+    }
+
+    .prescription-card {
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+      .top-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        .edit-btn {
+          background-color: #08ab99;
+          color: white;
+          border: none;
+          padding: 6px 16px;
+          border-radius: 6px;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: #04917f;
+          }
+        }
+
+        .delete-icon {
+          font-size: 18px;
+          color: #ff1744;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .prescription-info {
+        .field {
+          display: flex;
+          flex-direction: column;
+          font-size: 16px;
+          font-weight: 500;
+          color: #333;
+          margin-bottom: 15px;
+
+          label {
+            margin-top: 10px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #08ab99;
+          }
+
+          input,
+          textarea,
+          select,
+          span {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            background-color: #f9f9f9;
+            font-weight: 600;
+            color: #000;
+            resize: vertical;
+            white-space: pre-wrap;
+            display: block;
+          }
+
+          span {
+            display: block;
+          }
+        }
+
+        .medicines-list {
+          margin-top: 10px;
+
+          &::before {
+            content: "Medicines:";
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            /* reduced from 16px */
+            margin-bottom: 8px;
+            /* slightly less margin */
+            color: #08ab99;
+          }
+
+          .medicine-edit,
+          .medicine-display {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 12px;
+
+            input,
+            select,
+            span {
+              flex: 1 1 150px;
+              padding: 6px 8px;
+              border: 1px solid #ccc;
+              border-radius: 6px;
+              font-size: 14px;
+              background-color: #f9f9f9;
+              font-weight: 500;
+              color: #000;
+              white-space: pre-wrap;
+              display: block;
+            }
+
+            span {
+              font-weight: 500;
+            }
+          }
+        }
+
+        .button-row {
+          margin-top: 15px;
+          display: flex;
+          gap: 10px;
+
+          .edit-btn {
+            padding: 8px 20px;
+            font-size: 15px;
+          }
+
+          .save-btn {
+            background-color: #08ab99;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+              background-color: #04917f;
+            }
+          }
+
+          .cancel-btn {
+            background-color: #ccc;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+              background-color: #b3b3b3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.medicine,
+.field-patient-vitals-display,
+.field-patient-symptoms-display,
+.field-patient-diagnosis-display {
+  label {
+    color: #08ab99;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  span {
+    flex: 1 1 150px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    font-weight: 500;
+    color: #000;
+    white-space: pre-wrap;
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+
+.field-patient-vitals-display {
+  .medicine-display2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.vitals-inputs-2 {
+  display: flex;
+  // flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.medicine-display {
+  // display: flex;
+  // border: 1px solid #ccc;
+  // border-radius: 6px;
+  // font-size: 14px;
+  // background-color: #f9f9f9;
+  // font-weight: 500;
+  // color: #000;
+  // white-space: pre-wrap;
+  // display: block;
+
+  display: flex;
+  gap: 10px;
+
+
+}

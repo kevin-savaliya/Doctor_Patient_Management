@@ -1,0 +1,129 @@
+.add-patient-container {
+  margin-left: 250px;
+  min-height: 100vh;
+  background-color: #e0f2f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding: 2rem;
+
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #08ab99;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #2e8b80;
+    }
+  }
+
+  .center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #0047ab;
+
+    .add-patient-icon{
+      font-size: 34px;
+      color: #0047ab;
+      margin-right: 5px;
+    }
+
+  }
+
+  .form-card {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .patient-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .form-row {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .form-group {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          label {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #08ab99;
+          }
+
+          input,
+          select {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+          }
+        }
+
+        .full-width {
+          flex: 1 1 100%;
+        }
+
+        .image-preview {
+          margin-top: 0.75rem;
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 8px;
+          border: 1px solid #ddd;
+        }
+      }
+
+      .submit-btn {
+        padding: 0.75rem;
+        background-color: #0047ab;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #1d68b9;
+        }
+      }
+    }
+  }
+}

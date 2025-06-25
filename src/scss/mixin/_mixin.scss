@@ -1,0 +1,74 @@
+@mixin flex{
+    display: flex;
+}
+
+@mixin grid-col-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@mixin grid-col-5{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+@mixin btn-blue-white{
+    background-color: var(--button-background-color-blue);
+    color: var(--button-font-color-white);
+    text-align: center;
+    width: 180px;
+    padding:10px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: var(--button-background-color-white);
+        color: var(--button-font-color-black);
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+    }
+}
+
+@mixin btn-blue-white2{
+    background-color: var(--button-background-color-blue);
+    color: var(--button-font-color-white);
+    text-align: center;
+    width: 180px;
+    padding:10px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid var(--button-background-color-blue);
+
+    &:hover{
+        background-color: var(--button-background-color-white);
+        color: var(--button-font-color-black);
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        border: 1px solid var(--button-background-color-black);
+    }
+}
+@mixin btn-blue-white3{
+    background-color: var(--button-background-color-blue);
+    color: var(--button-font-color-white);
+    text-align: center;
+    width: 211px;
+    padding:10px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid var(--button-background-color-blue);
+
+    &:hover{
+        background-color: var(--button-background-color-white);
+        color: var(--button-font-color-black);
+        transition: 0.3s ease-in-out;
+        font-weight: 600;
+        border: 1px solid var(--button-background-color-black);
+    }
+}
