@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# 🩺 Doctor Patient Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive web-based Doctor-Patient Management System that enables doctors to efficiently manage patient records, prescriptions, and medicine data.
 
-## Available Scripts
+This project includes a complete **React.js frontend**, **Node.js + Express backend**, and **MongoDB database**, all hosted using free-tier platforms like **Vercel** and **Render**.
 
-In the project directory, you can run:
+> 🌐 **Live Website**: [Doctor Patient Management (Frontend)](https://doctor-patient-management-beige.vercel.app)  
+> 🔗 **Backend API**: [Render Hosted API](https://hospital-management-epar.onrender.com)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👨‍⚕️ Doctor Login
+- Secure login using email and password.
 
-### `npm test`
+### 📝 Patient Management
+- Add patient details:  
+  _Name, Email, Contact, DOB, Gender, Address, Profile Image._
+- View a list of all patients.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💊 Medicine Management
+- Add medicine information:  
+  _Medicine Name, Manufacturer, Strength, Form, etc._
+- View all added medicine records.
 
-### `npm run build`
+### 📄 Prescription Management
+- Create prescriptions including:
+  - Diagnosis, Symptoms, Doctor's Notes
+  - Vitals: Height, Weight, Blood Pressure, Temperature, Pulse
+  - Select medicine from existing list
+  - Set Dosage, Frequency, Duration, Instructions
+- View prescription history.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Layer      | Technology                  |
+|------------|-----------------------------|
+| Frontend   | React.js                    |
+| Backend    | Node.js, Express.js         |
+| Database   | MongoDB (MongoDB Atlas)     |
+| Image Upload | Cloudinary (optional)     |
+| Frontend Hosting | Vercel                |
+| Backend Hosting  | Render                |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧠 How It Works
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Doctor logs in via the frontend.
+2. Can manage:
+   - Patient records
+   - Medicine inventory
+   - Patient prescriptions
+3. All actions communicate with the backend API hosted on Render.
+4. Data is persisted in MongoDB Atlas cloud database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
 
-## Learn More
+```
+Doctor_Patient_Management/
+│
+├── Frontend/                 # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── Common/Components/    # Sidebar, splash screen, etc.
+│   │   ├── Pages/                # Patient, Medicine, Prescription pages
+│   │   └── App.js
+│   └── package.json
+│
+├── Backend/                  # Node.js + Express backend
+│   ├── routes/               # API routes
+│   ├── models/               # Mongoose models
+│   ├── controllers/          # Controller logic
+│   ├── config/               # DB and dotenv config
+│   ├── index.js
+│   └── package.json
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶️ Getting Started
 
-### Code Splitting
+### 🔧 Prerequisites
+- Node.js (v14+)
+- npm
+- MongoDB Atlas account
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🔽 Clone the Repository
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/kevin-savaliya/Doctor_Patient_Management.git
+cd Doctor_Patient_Management
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## ▶️ Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🚀 Start Backend
 
-### Advanced Configuration
+```bash
+cd Backend
+npm install
+# Create a .env file and add:
+# MONGO_URI=your_mongo_uri
+# PORT=5000
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🚀 Start Frontend
 
-### Deployment
+```bash
+cd Frontend
+npm install
+# Create a .env file and add:
+# REACT_APP_API_URL=https://hospital-management-epar.onrender.com
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🛠 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Backend `.env`
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+### Frontend `.env`
+```env
+REACT_APP_API_URL=https://hospital-management-epar.onrender.com
+```
+
+---
+
+## 🔮 Future Improvements
+
+- 🔐 JWT Authentication & Authorization
+- 👤 Doctor Profile Management
+- 🧾 Export Prescriptions to PDF
+- 📊 Analytics Dashboard
+- 📅 Appointment Scheduling
+- 💰 Billing System
+
+---
+
+## 👨‍💻 Author
+
+**Kevin Savaliya**
+
+- GitHub: [@kevin-savaliya](https://github.com/kevin-savaliya)
+- Frontend: [https://doctor-patient-management-beige.vercel.app](https://doctor-patient-management-beige.vercel.app)
+- Backend API: [https://hospital-management-epar.onrender.com](https://hospital-management-epar.onrender.com)
+
+---
+
+> ⭐️ If you found this project helpful, don’t forget to star the repository!
